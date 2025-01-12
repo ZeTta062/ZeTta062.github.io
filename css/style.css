@@ -1,0 +1,173 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+
+/* li {list-style: none;} */
+*{margin: 0;
+padding: 0;}
+
+.hidden{
+    display: none;
+}
+
+input {
+    background: none;
+    appearance: none;
+    border: 0;
+    font-size: 22px;
+    color: white;
+    border-bottom: 2px solid white;
+  }
+
+
+body{
+    height: 100vh;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1111;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+body img {
+    position:absolute;
+    width:100%;
+    height:100%;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -3;
+    background: #1111;
+    }
+.cover{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 30%;
+    z-index: -2;
+}
+
+header #weather{
+    position: absolute;
+    font-style: italic;
+    font-size: 12px;
+    top: 25px;
+    right: 25px;
+}      
+
+#main  {
+    background-size: cover;
+    color: white;
+}
+
+
+.center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.center #clock{
+    font-size: 3em;
+    margin-bottom: -5px;
+}
+.center input.logIninput{
+    appearance: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3em;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.center input.logIninput::placeholder{
+    color:rgb(235, 235, 235);
+}
+.center .hello{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+#todoForm{
+    text-align: center;
+}
+.center .todoinput{
+    width: 550px;
+    height: 60px;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    color: black;
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.center .todoinput::placeholder{
+    color:rgb(114, 114, 114);
+    text-decoration: underline;
+
+    
+}
+.center #todoList{
+    overflow: hidden;
+    width: 700px;
+    height: 470px;
+    font-size: 3em;
+    background-color: rgb(224, 219, 219);
+    border: 3px solid black;
+    border-radius: 20px;
+    padding:  5px  10px 5px 50px ; /* 위 오른쪽 아래 왼쪽 */
+} 
+.center #todoList li{
+    padding: 5px;
+    color:black;
+    font-family: "Nanum Brush Script", serif;
+    border-bottom: 2px dashed #2222;
+    margin: 5px auto 5px auto;
+}
+/* .center #todoList li:last-child{
+    border-bottom: none;
+} */
+.center #todoList li button{
+    float: right;
+    width: 52px;
+    height: 52px;
+    text-align: center;
+    font-size: 36px;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+#quote{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgb(41, 41, 41);
+    opacity: 50%;
+    padding: 5px 10px 5px 10px;
+    z-index: -1;
+}
+#quote .quote,
+#quote .author{
+    text-align: left;
+    font-size: 15px;
+}
