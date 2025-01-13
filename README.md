@@ -2,7 +2,7 @@
 - nomad JS Challenge
 
 ## 완성 작품
-ZeTta062.github.io
+https://zetta062.github.io/
 
 ## Use
 - 실시간 시계
