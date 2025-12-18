@@ -6,6 +6,7 @@ import { Download, Loader2, ServerCrash } from "lucide-react";
 
 import WindowWrapper from "@/hoc/windowWrapper";
 import { WindowControls } from "@/components/window-controls";
+import { toast, Toaster } from "sonner";
 
 
 /* react PDF */
@@ -19,6 +20,10 @@ const Resume = () => {
     function onDocumentLoadSuccess({ numPages} : { numPages: number }) {
         setNumPages(numPages);
     }
+
+    const onDownload = () => {
+        toast.success(`resume.pdf 다운로드 성공`)
+    }
     
     return (
         <>
@@ -31,6 +36,7 @@ const Resume = () => {
                     download
                     className="cursor-pointer"
                     title="Download resume"
+                    onClick={onDownload}
                 >
                     <Download className="icon" />
                 </a>
@@ -82,6 +88,8 @@ const Resume = () => {
                     </button>
                 </div>
             )}
+
+            <Toaster richColors />
         </>
     )
 }
