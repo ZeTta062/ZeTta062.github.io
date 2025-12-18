@@ -29,18 +29,18 @@ export const photosLinks = [
 export const gallery = [
     {
       id: 1,
-      img: "/images/gal1.png",
+      img: "/images/project-3.png",
     },
     {
       id: 2,
-      img: "/images/gal2.png",
+      img: "/images/zetta1.png",
     },
     {
       id: 3,
-      img: "/images/gal3.png",
+      img: "/images/project-1.png",
     },
     {
       id: 4,
-      img: "/images/gal4.png",
+      img: "/images/project-icon-3.png",
     },
 ];

@@ -53,6 +53,7 @@ const Photos = () => {
                                     fileType: "img",
                                     imageUrl: img,
                                 })}
+                                className="cursor-pointer border rounded-lg"
                             >
                                 <img src={img} alt={`${id}번 갤러리 이미지`} />
                             </li>

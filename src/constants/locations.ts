@@ -1,4 +1,10 @@
 /* top-10 | left-8, 52 | right-8 */
+
+const POSITION1 = "top-10 left-8"
+const POSITION2 = "top-10 left-52"
+const POSITION3 = "top-10 right-8"
+const POSITION4 = "top-44 left-8"
+
 const WORK_LOCATION = {
     id: 1,
     type: "work",
@@ -12,16 +18,16 @@ const WORK_LOCATION = {
             name: "유튜브 클론코딩",
             icon: "/images/folder.png",
             kind: "folder",
-            position: "top-10 left-8", // icon position inside Finder
-            windowPosition: "top-[2vh] left-4", // optional: Finder window position
+            position: POSITION1, // icon position inside Finder
+            windowPosition: "top-[2vh] left-3.5", // optional: Finder window position
             children: [
                 {
                     id: 1,
-                    name: "newtube Project.txt",
+                    name: "new-tube.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
-                    position: "top-5 left-10",
+                    position: POSITION1,
                     description: [
                     "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
                     "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
@@ -31,30 +37,21 @@ const WORK_LOCATION = {
                 },
                 {
                     id: 2,
-                    name: "newtube.com",
-                    icon: "/images/newtube_logo.svg",
-                    kind: "file",
-                    fileType: "url",
-                    href: "https://newtube-iota.vercel.app",
-                    position: "top-10 right-20",
-                },
-                {
-                    id: 4,
-                    name: "newtube.png",
+                    name: "new-tube.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
-                    position: "top-52 right-80",
+                    position: POSITION2,
                     imageUrl: "/images/project-1.png",
                 },
                 {
-                    id: 5,
-                    name: "Design.fig",
-                    icon: "/images/plain.png",
+                    id: 3,
+                    name: "new-tube.com",
+                    icon: "/images/project-icon-1.svg",
                     kind: "file",
-                    fileType: "fig",
-                    href: "https://google.com",
-                    position: "top-60 right-20",
+                    fileType: "url",
+                    href: "https://newtube-iota.vercel.app",
+                    position: POSITION3,
                 },
             ],
         },
@@ -65,16 +62,16 @@ const WORK_LOCATION = {
             name: "Jira 클론코딩",
             icon: "/images/folder.png",
             kind: "folder",
-            position: "top-10 left-52",
+            position: POSITION2,
             windowPosition: "top-[13vh] left-6",
             children: [
                 {
                     id: 1,
-                    name: "AI Resume Analyzer Project.txt",
+                    name: "Jira-Clone.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
-                    position: "top-5 right-10",
+                    position: POSITION1,
                     description: [
                         "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
                         "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
@@ -84,30 +81,30 @@ const WORK_LOCATION = {
                 },
                 {
                     id: 2,
-                    name: "jira-clone.com",
+                    name: "Jira-Clone.png",
+                    icon: "/images/image.png",
+                    kind: "file",
+                    fileType: "img",
+                    position: POSITION2,
+                    imageUrl: "/images/project-2.png",
+                },
+                {
+                    id: 3,
+                    name: "Jira-clone.com",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
                     href: "https://jira-clone-public.vercel.app",
-                    position: "top-20 left-20",
+                    position: POSITION3,
                 },
                 {
                     id: 4,
-                    name: "ai-resume-analyzer.png",
-                    icon: "/images/image.png",
-                    kind: "file",
-                    fileType: "img",
-                    position: "top-52 left-80",
-                    imageUrl: "/images/project-2.png",
-                },
-                {
-                    id: 5,
                     name: "Design.fig",
                     icon: "/images/plain.png",
                     kind: "file",
                     fileType: "fig",
                     href: "https://google.com",
-                    position: "top-60 left-5",
+                    position: POSITION4,
                 },
             ],
         },
@@ -115,19 +112,19 @@ const WORK_LOCATION = {
       // ▶ Project 3
         {
             id: 7,
-            name: "Food Delivery App",
+            name: "Next 블로그",
             icon: "/images/folder.png",
             kind: "folder",
-            position: "top-10 right-8",
-            windowPosition: "top-[24vh] left-2",
+            position: POSITION3,
+            windowPosition: "top-[24vh] left-6.5",
             children: [
                 {
                     id: 1,
-                    name: "Food Delivery App Project.txt",
+                    name: "Next-blog.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
-                    position: "top-5 left-10",
+                    position: POSITION1,
                     description: [
                     "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
                     "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
@@ -137,30 +134,30 @@ const WORK_LOCATION = {
                 },
                 {
                     id: 2,
-                    name: "food-delivery-app.com",
-                    icon: "/images/safari.png",
-                    kind: "file",
-                    fileType: "url",
-                    href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
-                    position: "top-10 right-20",
-                },
-                {
-                    id: 4,
-                    name: "food-delivery-app.png",
+                    name: "Next-blog.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
-                    position: "top-52 right-80",
+                    position: POSITION2,
                     imageUrl: "/images/project-3.png",
                 },
                 {
-                    id: 5,
+                    id: 3,
+                    name: "Next-blog.com",
+                    icon: "/images/project-icon-3.png",
+                    kind: "file",
+                    fileType: "url",
+                    href: "https://next-blog-ivory-beta-36.vercel.app",
+                    position: POSITION3,
+                },
+                {
+                    id: 4,
                     name: "Design.fig",
                     icon: "/images/plain.png",
                     kind: "file",
                     fileType: "fig",
                     href: "https://google.com",
-                    position: "top-60 right-20",
+                    position: POSITION4,
                 },
             ],
         },
@@ -180,7 +177,7 @@ const ABOUT_LOCATION = {
             icon: "/images/image.png",
             kind: "file",
             fileType: "img",
-            position: "top-10 left-8",
+            position: POSITION1,
             imageUrl: "/images/zetta1.png",
         },
         {
@@ -189,7 +186,7 @@ const ABOUT_LOCATION = {
             icon: "/images/image.png",
             kind: "file",
             fileType: "img",
-            position: "top-10 left-52",
+            position: POSITION2,
             imageUrl: "/images/adrian-2.jpg",
         },
         {
@@ -198,7 +195,7 @@ const ABOUT_LOCATION = {
             icon: "/images/image.png",
             kind: "file",
             fileType: "img",
-            position: "top-10 right-8",
+            position: POSITION3,
             imageUrl: "/images/adrian-3.jpeg",
         },
         {
@@ -207,7 +204,7 @@ const ABOUT_LOCATION = {
             icon: "/images/txt.png",
             kind: "file",
             fileType: "txt",
-            position: "top-44 left-8",
+            position: POSITION4,
             subtitle: "Meet the Developer Behind the Code",
             image: "/images/adrian.jpg",
             description: [
@@ -252,7 +249,7 @@ const TRASH_LOCATION = {
             icon: "/images/image.png",
             kind: "file",
             fileType: "img",
-            position: "top-10 left-8",
+            position: POSITION1,
             imageUrl: "/images/trash-1.png",
         },
         {
@@ -261,7 +258,7 @@ const TRASH_LOCATION = {
             icon: "/images/image.png",
             kind: "file",
             fileType: "img",
-            position: "top-10 left-52",
+            position: POSITION2,
             imageUrl: "/images/trash-2.png",
         },
     ],
