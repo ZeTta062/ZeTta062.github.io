@@ -23,16 +23,24 @@ const Contact = () => {
                 <p>이메일</p>
 
                 <ul>
-                    {socials.map(({ id, bg, link, icon, text}) => (
+                    {socials.map(({ id, bg, link, icon, text, canOpen }) => (
                         <li 
                             key={id} 
-                            style={{ backgroundColor: bg }}
+                            style={{ 
+                                backgroundColor: canOpen ? bg : '#ccc',
+                                opacity: canOpen ? 1 : 0.6,
+                            }}
+                            className={`rounded-md transition-all ${!canOpen ? 'cursor-not-allowed' : ''}`}
                         >
                             <a 
                                 href={link} 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 title={text}
+                                onClick={(e) => {
+                                    if (!canOpen) e.preventDefault();
+                                }}
+                                className={`${!canOpen ? 'cursor-not-allowed' : ''}`}
                             >
                                 <img src={icon} alt={text} className="size-5" />
                                 <p>{text}</p>
